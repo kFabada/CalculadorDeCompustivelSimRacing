@@ -29,19 +29,7 @@ public class Main {
             int cal = gerador.totalConsumo() / pitstopqtd;
             System.out.print("o numero de pitsop é: " + pitstopqtd + " e a quantidade de combustivel por pit é " + cal );
         }
-
-
-
         sc.close();
     }
 }
 
-//Tempo Total de Corrida
-//
-//Tempo por Volta
-//
-//Número de Voltas
-//
-//Consumo por Volta 2.7 * totalVolta
-//
-//Capacidade do Tanque
