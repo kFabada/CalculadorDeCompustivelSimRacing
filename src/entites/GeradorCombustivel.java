@@ -14,4 +14,12 @@ public class GeradorCombustivel {
         double cal = consumoVolta * calTotalVolta();
         return (int) cal;
     }
+
+
+    public String toString() {
+        return
+                "tempoTotal = " + tempoTotal +
+                " tempoVolta = " + tempoVolta +
+                " consumoVolta = " + consumoVolta ;
+    }
 }

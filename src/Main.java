@@ -20,15 +20,16 @@ public class Main {
         System.out.print("Digite a quantidade de litros por volto: " );
         gerador.consumoVolta = sc.nextDouble();
         System.out.print("O consumo total da corrida é: " + gerador.totalConsumo() + "L\n");
-        System.out.print("que dividir o numero de pitstop escolha y para divisão: ");
-
+        System.out.print("Que dividir o numero de pitstop escolha y para divisão: ");
         char escolha = sc.next().charAt(0);
-        if (escolha == 'Y'){
+        if (escolha == 'y'){
             System.out.print("Digite a quantidade de pitsop que vai querer fazer ");
-            int pitstopqtd = sc.nextInt();
-            int cal = gerador.totalConsumo() / pitstopqtd;
-            System.out.print("o numero de pitsop é: " + pitstopqtd + " e a quantidade de combustivel por pit é " + cal );
+            double pitstopqtd = sc.nextInt();
+            double cal = gerador.totalConsumo() / pitstopqtd;
+            System.out.print("o numero de pitsop é: " + (int)pitstopqtd + " e a quantidade de combustivel por pit é " + cal );
         }
+
+
         sc.close();
     }
 }
